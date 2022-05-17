@@ -2,12 +2,11 @@ html,
 body {
     height: 100%;
     width: 100%;
-    padding: 0!important;
     margin: unset;
 }
 
 body * {
-    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif, cursive;
+    font-family: 'Arial', Tahoma cursive;
 }
 
 main {
@@ -18,8 +17,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(47, 47, 47, 1) 37%, rgba(47, 47, 47, 1) 61%, rgba(0, 0, 0, 1) 100%);
+    background: rgb(77, 77, 109);
+}
+
+h3{
+    text-align: center;
 }
 
 #app-title {
@@ -28,7 +30,7 @@ main {
     font-family: arial;
     font-size: 2rem;
     color: #fff;
-    text-shadow: 3px 3px 8px #4b889f;
+    text-shadow: 3px 3px 5px #4b889f;
 }
 
 #form-holder {
@@ -45,8 +47,8 @@ main {
     border-radius: 0.5em;
     width: 40vw;
     min-height: 20vh;
-    background-color: white;
-    box-shadow: 0px 5px 24px #d6ecff;
+    background-color: rgb(206, 108, 108);
+    box-shadow: 0px 2px 10px #e2e2e2;
 }
 
 
@@ -66,6 +68,7 @@ main {
 }
 
 input.input-item {
+    width: 98%;
     padding: 0.5em 0.3em;
     border: 1px solid;
     border-radius: 0.3rem;
@@ -93,9 +96,9 @@ form {
 }
 
 button#calculate-btn {
-    background-color: #57abfb;
-    font-weight: 700;
-    color: #fff;
+    background-color: rgb(92, 92, 145);;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.863);
 }
 
 .btn-block {
@@ -105,7 +108,7 @@ button#calculate-btn {
     border-radius: 0.3rem;
     margin-bottom: 0.5rem;
     border: unset;
-    transition: all ease-in .1s;
+    transition: all ease-in .3s;
 }
 
 .btn-block:active {
@@ -119,21 +122,25 @@ button#calculate-btn {
 
 #table-title{
     display: none;
+    margin-left: 30px;
+
 }
 
 #result {
-    border-collapse: collapse;
-    width: 100%;
-    display: none;
+    
+    border-collapse: separate;
+    width: 90%;
+    display:  none;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#result th,
 #result tr,
 #result td {
     border: 1px solid;
-    border-color: #4444442e;
+    border-color: #ffffff8f;
     padding: .3rem .5rem;
 }
 

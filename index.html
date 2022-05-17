@@ -8,6 +8,7 @@
     <title>Electricity Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
 </head>
 <style></style>
 
@@ -16,9 +17,12 @@
         <h1 id="app-title">Electricity Calculator<br> Douglas(2020338) & Keith(2020353)</h1>
         <div id="form-holder">
             <div id="main-box">
+                <div>
+                    <h3>Please, type in the details and press 'Calculate bill'</h3>
+                </div>
                 <form action="" id="calculate-bill-form">
                     <div class="form-item">
-                        <label for="electricity-units"><b>Electricity Units</b></label>
+                        <label for="electricity-units"><b>Number of Units</b></label>
                         <input type="number" step="any" min="1" name="electricity-units" id="electricity-units" class="input-item text-right" required>
                     </div>
                     <div class="form-item">
@@ -32,12 +36,16 @@
                 </form>
                 
                 <table id="result">
-                    <label for="result" id="table-title"><b> Bill details: </b></label>
+                    <label for="result" id="table-title"><b> Billing details: </b></label>
                     <tbody>
                         <tr>
                             <td class=""><b>Total Amount (excl. VAT)</b></td>
-                            <td class="text-right" id="monthly-pay"></td>
+                            <td class="text-right" id="total-less-vat"></td>
                         </tr>
+                        <tr>
+                            <td class=""><b>VAT in this bill</b></td>
+                            <td class="text-right" id="vat"></td>
+                        </tr >
                         <tr>
                             <td class=""><b>Total Payable (incl. VAT)</b></td>
                             <td class="text-right" id="total-pay"></td>
