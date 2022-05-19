@@ -1,4 +1,7 @@
+
 window.onload = function() {
+
+
  
     const billForm = document.getElementById('calculate-bill-form')
     billForm.addEventListener('submit', function(e) {
