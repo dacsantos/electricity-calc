@@ -34,4 +34,3 @@ window.onload = function() {
             document.getElementById('reset-btn').style.display = 'none';
     })
 }
-

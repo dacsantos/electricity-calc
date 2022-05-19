@@ -1,13 +1,13 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
-    margin: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment:fixed;
 }
 
 body * {
-    font-family: 'Arial', Tahoma cursive;
-    
+    font-family: 'Arial', Tahoma;
 }
 
 
@@ -19,7 +19,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(171, 209, 220);
+    padding-top: 50px;
+
 }
 
 h3{
@@ -29,10 +30,10 @@ h3{
 #app-title {
     margin: 1rem 4rem;
     text-align: center;
-    font-family: 'Century Gothic', Verdana, sanss-serif;
+    font-family: 'Century Gothic', Verdana, sans-serif;
     font-size: 2rem;
-    color: rgb(198, 164, 119);
-    text-shadow: 1px 2px 5px rgb(247, 234, 215);
+    color: rgb(243, 243, 243);
+    text-shadow: 1px 2px 5px rgb(20, 24, 247);
 }
 
 #form-holder {
@@ -49,13 +50,19 @@ h3{
     border-radius: 0.5em;
     width: 40vw;
     min-height: 20vh;
-    background-color: rgb(238, 215, 163);
-    box-shadow: 0px 2px 10px rgb(247, 234, 215);
+    background-color: rgb(163, 223, 238);
+    box-shadow: 0px 2px 10px rgb(194, 205, 253);
 }
 
 
 /* forms */
-
+img {
+    float: right;
+    max-width: 45%;
+    margin-left: auto;
+    display: block;
+   }
+   
 .form-item {
     padding: 0.5em 2em;
 }
@@ -69,8 +76,10 @@ h3{
     width: 100%;
 }
 
+
+
 input.input-item {
-    width: 98%;
+    width: 50%;
     padding: 0.5em 0.3em;
     border: 1px solid;
     border-radius: 0.3rem;
@@ -98,9 +107,10 @@ form {
 }
 
 button#calculate-btn {
-    background-color: rgb(112, 151, 168);
+    background-color: rgb(31, 114, 150);
     font-weight: 600;
     color: rgba(255, 255, 255, 0.863);
+    width: 52%;
 }
 
 .btn-block {
@@ -111,6 +121,7 @@ button#calculate-btn {
     margin-bottom: 0.5rem;
     border: unset;
     transition: all ease-in .3s;
+    width: 52%;
 }
 
 .btn-block:active {
